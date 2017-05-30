@@ -1,0 +1,23 @@
+{
+  "name": "mmt-hiring-project-colin-jaffe",
+  "version": "1.0.0",
+  "description": "A D3 Project As Part of a Larger Getting Employed Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "harp server --port $PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbreviatedman/mmt-hiring-project-colin-jaffe.git"
+  },
+  "author": "colin jaffe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abbreviatedman/mmt-hiring-project-colin-jaffe/issues"
+  },
+  "homepage": "https://github.com/abbreviatedman/mmt-hiring-project-colin-jaffe#readme",
+  "dependencies": {
+        "harp": "^0.23.0"
+  }
+}
