@@ -1,5 +1,5 @@
 var margin = {
-  top: 20,
+  top: 80,
   right: 20,
   bottom: 80,
   left: 50
@@ -89,7 +89,7 @@ d3.json('stock.json', function(error, data) {
       return scaleY(trade.price);
     })
     .attr('r', function(trade) {
-      return (trade.shares / 50);
+      return ((trade.shares / 100) + 1);
     })
     .attr('fill', function(trade) {
       return trade.tradeType === 'E'
@@ -151,7 +151,6 @@ d3.json('stock.json', function(error, data) {
         });
     })
     .text('Hide Asks');
-    });
 
   var bidsActive = true;
   svg.append('text')
@@ -170,6 +169,13 @@ d3.json('stock.json', function(error, data) {
         });
     })
     .text('Hide Bids');
+
+  svg.append('text')
+    .attr('x', 480)
+    .attr('y', 30)
+    .attr('text-anchor', 'middle')
+    .text('As this graph demonstrates, someone should hire me quick.');
+});
 
 function handleMouseover(data) {
   g.append('text')
