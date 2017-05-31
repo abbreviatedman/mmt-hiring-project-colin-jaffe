@@ -1,11 +1,32 @@
-.bar {
-  fill: steelblue;
+.graph {
+  background-color: #B6B691;
 }
 
-.bar:hover {
-  fill: brown;
+.trade-mouseover {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
-.axis--x path {
-  display: none;
+.ask-area  {
+  fill: #945E1E;
+}
+
+.toggle-asks {
+  fill: #945E1E;
+}
+
+.bid-area {
+  fill: #4C7249;
+}
+
+.toggle-bids {
+  fill: #4C7249;
+}
+
+.y-axis-label {
+  fill: #000;
+}
+
+.toggle-trades {
+  fill: black;
 }
