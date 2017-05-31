@@ -126,6 +126,19 @@ d3.json("stock.json", function(error, data) {
       .attr("dy", "0.71em")
       .attr("text-anchor", "end")
       .text("Price ($)");
+
+  var active = true;
+  svg.append("text")
+    .attr("x", 0)
+    .attr("y", height + margin.top + 30)
+    .attr("class", "toggle-trades")
+    .style("fill", "black")
+    .on("click", function(){
+      var newOpacity = active ? 0 : 1;
+      d3.selectAll(".trade-circle").style("opacity", newOpacity);
+      active = !active;
+    })
+    .text("Toggle Trades");
 });
 
 function handleMouseOver(data) {
